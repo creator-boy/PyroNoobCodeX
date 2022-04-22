@@ -2,17 +2,10 @@
     "name":"Pyro Video Downloader Bot",
     "description":"Download videos from txt file  using this telegram bot",
     "repository":"https://github.com/arunsingh-creator/txt",
-    "buildpacks":[
-        {
-            "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git"
-        }
-        {
-            "url": "https://github.com/amivin/aria2-heroku.git"
-        }
-        {
-            "url": "heroku/python"
-        }
-    ],
+    "keywords": [
+      "txt"
+   
+  ],
     "env": {
         "API_ID":{
             "description": "Get your telegram API ID from https://my.telegram.org",
@@ -26,6 +19,18 @@
             "description":"Get from BotFather",
             "value":""
         }
-     }
+     "buildpacks":[
+        {
+            "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git"
+        },
+        {
+            "url": "https://github.com/amivin/aria2-heroku.git"
+        }
+        {
+            "url": "heroku/python"
+        }
+    ]
+   }
 }
+    
 
